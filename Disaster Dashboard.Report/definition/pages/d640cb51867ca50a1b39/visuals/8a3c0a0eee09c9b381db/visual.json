@@ -118,7 +118,7 @@
             "value_max": {
               "expr": {
                 "Literal": {
-                  "Value": "465D"
+                  "Value": "586D"
                 }
               }
             },
@@ -132,7 +132,7 @@
             "value_mid": {
               "expr": {
                 "Literal": {
-                  "Value": "233D"
+                  "Value": "293.5D"
                 }
               }
             }
@@ -286,6 +286,33 @@
               "expr": {
                 "Literal": {
                   "Value": "'Mercator'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "shapeColorLegend": [
+        {
+          "properties": {
+            "legend_ticks": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            },
+            "legend_height": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
+            "legend_width": {
+              "expr": {
+                "Literal": {
+                  "Value": "220D"
                 }
               }
             }

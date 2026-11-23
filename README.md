@@ -99,7 +99,7 @@ The dashboard's title is **"Global Disaster Overview 2000 - 2025"**, so the data
 
 ## Dashboard
 
-![Disaster Report View](images/Disaster%20report%20view.png)
+![Report View](images/Report%20View%201.1.png)
 
 
 ## Author
