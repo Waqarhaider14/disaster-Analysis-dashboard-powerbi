@@ -95,6 +95,9 @@ To test row-level security, use *Modeling → View as* in Power BI Desktop and s
 
 The dashboard's title is **"Global Disaster Overview 2000 - 2025"**, so the data covers the years 2000 to 2025. 
 
+## Dashboard 
+
+
 ## Author
 
 **Waqar Haider Saddique**
