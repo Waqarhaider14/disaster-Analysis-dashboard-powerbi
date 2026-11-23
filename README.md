@@ -77,7 +77,7 @@ Global Disasters/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Waqarhaider14/Global-Disasters.git
+   git clone https://github.com/Waqarhaider14/disaster-Analysis-dashboard-powerbi.git
    ```
 2. Restore the `dw_disaster_events` PostgreSQL database on `localhost`.
 3. Open `Disaster Dashboard.pbip` in Power BI Desktop.
