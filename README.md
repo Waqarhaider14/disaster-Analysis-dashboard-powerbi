@@ -93,8 +93,8 @@ To test row-level security, use *Modeling → View as* in Power BI Desktop and s
 
 ## Data Source
 
-The dashboard's title is **"Global Disaster Overview 2000 - 2025"**, so the data covers the years 2000 to 2025. Add the original dataset source and license here (for example, a link to the public dataset you used).
+The dashboard's title is **"Global Disaster Overview 2000 - 2025"**, so the data covers the years 2000 to 2025. 
 
 ## Author
 
-**Waqar Haider Saddique**: created as part of Power BI learning practice.
+**Waqar Haider Saddique**
