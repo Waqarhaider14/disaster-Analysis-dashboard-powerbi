@@ -611,8 +611,13 @@
           "properties": {
             "text": {
               "expr": {
-                "Literal": {
-                  "Value": "'Disaster Count By Event Type'"
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dw dim_event_type"
+                    }
+                  },
+                  "Property": "Event_Type_Title"
                 }
               }
             },

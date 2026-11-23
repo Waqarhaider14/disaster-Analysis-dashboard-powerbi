@@ -28,6 +28,7 @@
               },
               "queryRef": "dw dim_location.country_location_name",
               "nativeQueryRef": "country_location_name",
+              "displayName": "Country:",
               "active": true
             }
           ]
@@ -293,6 +294,29 @@
       ]
     },
     "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dw dim_location"
+                    }
+                  },
+                  "Property": "Map_Title"
+                }
+              }
+            },
+            "show": {"expr": {"Literal": {"Value": "true"}}},
+            "fontFamily": {"expr": {"Literal": {"Value": "'Calibri'"}}},
+            "fontSize": {"expr": {"Literal": {"Value": "14D"}}},
+            "bold": {"expr": {"Literal": {"Value": "true"}}},
+            "alignment": {"expr": {"Literal": {"Value": "'left'"}}}
+          }
+        }
+      ],
       "border": [
         {
           "properties": {

@@ -34,6 +34,8 @@ The semantic model is a star schema built around one fact table.
 
 Data is imported from a PostgreSQL data warehouse.
 
+![Data Model View](images/Data%20Model%20View.png)
+
 ### Key measures
 
 - `DisasterRecord`, `DisasterCount` / `DistinctCount`: event counts
@@ -95,7 +97,9 @@ To test row-level security, use *Modeling → View as* in Power BI Desktop and s
 
 The dashboard's title is **"Global Disaster Overview 2000 - 2025"**, so the data covers the years 2000 to 2025. 
 
-## Dashboard 
+## Dashboard
+
+![Report View](images/Report%20View.png)
 
 
 ## Author

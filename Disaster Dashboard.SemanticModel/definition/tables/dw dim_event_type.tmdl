@@ -1,6 +1,21 @@
 table 'dw dim_event_type'
 	lineageTag: 967acd11-f951-4143-bce8-3deaab47f447
 
+	measure Event_Type_Title = ```
+			VAR _TotalTypes =
+			    CALCULATE(DISTINCTCOUNT('dw dim_event_type'[event_type_slicer]), ALL('dw dim_event_type'))
+			VAR _SelectedTypes = DISTINCTCOUNT('dw dim_event_type'[event_type_slicer])
+			VAR _SelectedName = SELECTEDVALUE('dw dim_event_type'[event_type_slicer])
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        _SelectedTypes = 0 || _SelectedTypes = _TotalTypes, "Disaster Count by Event Type",
+			        _SelectedTypes = 1, "Disaster Count by " & _SelectedName,
+			        "Disaster Count by " & _SelectedTypes & " Selected Event Types"
+			    )
+			```
+		lineageTag: 188328ee-40a5-4e50-b3c7-cf9ef0f6fda7
+
 	column event_type_id
 		dataType: int64
 		isNullable: false

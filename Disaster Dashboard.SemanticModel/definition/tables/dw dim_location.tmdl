@@ -5,6 +5,21 @@ table 'dw dim_location'
 		formatString: 0
 		lineageTag: 28c8a4a6-3772-4f6c-9313-f992a656d778
 
+	measure Map_Title = ```
+			VAR _TotalCountries =
+			    CALCULATE(DISTINCTCOUNT('dw dim_location'[country_location_name]), ALL('dw dim_location'))
+			VAR _SelectedCountries = DISTINCTCOUNT('dw dim_location'[country_location_name])
+			VAR _SelectedName = SELECTEDVALUE('dw dim_location'[country_location_name])
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        _SelectedCountries = 0 || _SelectedCountries = _TotalCountries, "Disaster Count by Country",
+			        _SelectedCountries = 1, "Disaster Count by " & _SelectedName,
+			        "Disaster Count by " & _SelectedCountries & " Selected Countries"
+			    )
+			```
+		lineageTag: ccfb3cb9-0527-46d7-9ba7-153c1917b44c
+
 	column location_id
 		dataType: int64
 		isNullable: false
