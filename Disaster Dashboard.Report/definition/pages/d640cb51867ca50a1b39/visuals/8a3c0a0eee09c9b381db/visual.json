@@ -27,9 +27,9 @@
                 }
               },
               "queryRef": "dw dim_location.country_location_name",
-              "nativeQueryRef": "country_location_name",
-              "displayName": "Country:",
-              "active": true
+              "nativeQueryRef": "Country",
+              "active": true,
+              "displayName": "Country"
             }
           ]
         },
@@ -309,11 +309,41 @@
                 }
               }
             },
-            "show": {"expr": {"Literal": {"Value": "true"}}},
-            "fontFamily": {"expr": {"Literal": {"Value": "'Calibri'"}}},
-            "fontSize": {"expr": {"Literal": {"Value": "14D"}}},
-            "bold": {"expr": {"Literal": {"Value": "true"}}},
-            "alignment": {"expr": {"Literal": {"Value": "'left'"}}}
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Calibri'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
           }
         }
       ],
